@@ -2,9 +2,6 @@
 
 A Fourier-spectral ETDRK4 solver for the 1D Kuramoto–Sivashinsky equation (KSE), benchmarked across four classical HPC backends (Serial, OpenMP, MPI, CUDA) and extended with a small-scale hybrid module that replaces the FFT with a simulated Quantum Fourier Transform (QFT) via Qiskit.
 
-Course project for **AMCS502: High-Performance Parallel Computing**.
-Full write-up: see `report.pdf` / `report.tex` in this repo.
-
 ---
 
 ## The equation
