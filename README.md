@@ -118,9 +118,3 @@ Every source of floating-point reordering tested here — MPI's distributed FFT,
 - Koopman/Carleman-operator linearization (EDMD) of the Galerkin-truncated dynamics, for variational quantum simulation of the *full* time evolution rather than just the transform step.
 - Port the hybrid pipeline to NVIDIA CUDA-Q for native single-program GPU/QPU co-execution.
 - Quantify quantum error amplification under chaos using the system's Lyapunov exponent.
-
----
-
-## Citation
-
-See `report.pdf` for the full derivation, algorithm (ETDRK4 pseudocode), and complete reference list.
