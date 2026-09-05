@@ -88,6 +88,14 @@ Pointwise error and overlapped snapshots, classical FFT vs. QFT-based transform,
 - Agreement to `O(10⁻¹³)` at early times — the amplitude-encoding (`x/‖x‖`) and rescaling (`‖x‖√N`) correctly recover the unnormalized DFT.
 - Error grows to `O(10⁻¹⁶)`–`O(10⁻¹⁵)` by `t=10` — the *same* chaotic-amplification signature seen for MPI/CUDA/FP32, just sourced from the quantum simulator's own floating-point rounding instead of a reordered classical sum.
 
+### `classical_vs_quantum.png`
+Full space-time heatmaps of the KSE trajectory at `N=16`: classical FFT vs. QFT-driven solver, shown side by side.
+
+![Space-time heatmaps of the KSE trajectory: classical FFT vs. QFT-driven solver](Figures/classical_vs_quantum.png)
+
+- The two heatmaps are visually indistinguishable at early times and only begin to decorrelate at later times — the same pointwise-error-then-decorrelation pattern quantified in `qft_fidelity.png`, but now visible across the full field rather than just isolated snapshots.
+- Confirms that the QFT substitution preserves the qualitative character of the KSE attractor, not just its short-time numerical values.
+
 ---
 
 ## Key numbers at a glance
